@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CibuburRentalCar" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Disable system splash screen -->
+        <item name="android:windowSplashScreenBackground">@color/deep_blue</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/deep_blue</item>
+
+        <!-- Make system splash match your app -->
+        <item name="android:statusBarColor">@color/deep_blue</item>
+        <item name="android:navigationBarColor">@color/deep_blue</item>
+        <item name="android:windowBackground">@color/deep_blue</item>
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Simple car icon in white -->
+    <group android:scaleX="1.5" android:scaleY="1.5" android:pivotX="54" android:pivotY="54">
+        <!-- Car body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M25,40 L75,40 L75,55 L25,55 Z" />
+
+        <!-- Car roof -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,30 L70,30 L75,40 L25,40 Z" />
+
+        <!-- Front wheel -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M32,58m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+        <!-- Rear wheel -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M68,58m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+        <!-- Windows -->
+        <path
+            android:fillColor="#1976D2"
+            android:pathData="M32,32 L68,32 L72,38 L28,38 Z" />
+    </group>
+
+    <!-- Text "CIBUBUR" -->
+    <group android:translateY="20">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,75 L30,80 L75,80 L75,75 Z" />
+    </group>
+</vector>

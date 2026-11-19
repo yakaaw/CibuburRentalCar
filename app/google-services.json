@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362537001461",
+    "project_id": "cibuburrentalcar",
+    "storage_bucket": "cibuburrentalcar.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362537001461:android:995f85bc2d08e0d6d840bc",
+        "android_client_info": {
+          "package_name": "com.yaka.cibuburrentalcar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS-KCXoI_1adfjODnRMHVgDlHjqz7cQD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

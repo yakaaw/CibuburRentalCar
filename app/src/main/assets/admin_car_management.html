@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Mobil - Cibubur Rental Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 70px;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+            display: block;
+        }
+        .filter-tabs {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .sort-options {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .car-image {
+            height: 120px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .car-image i {
+            font-size: 3rem;
+            color: #6c757d;
+        }
+        .status-available {
+            background-color: #d1e7dd;
+            color: #0f5132;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .status-rented {
+            background-color: #cff4fc;
+            color: #055160;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .status-maintenance {
+            background-color: #f8d7da;
+            color: #842029;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-light">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <div>Manajemen Mobil</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="container mt-3">
+        <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Cari mobil...">
+        </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="container filter-tabs">
+        <div class="d-flex overflow-auto">
+            <button class="btn btn-primary btn-sm me-2">Semua</button>
+            <button class="btn btn-outline-primary btn-sm me-2">Tersedia</button>
+            <button class="btn btn-outline-primary btn-sm me-2">Disewa</button>
+            <button class="btn btn-outline-primary btn-sm">Maintenance</button>
+        </div>
+    </div>
+
+    <!-- Sort Options -->
+    <div class="container sort-options">
+        <h5>Urutkan Berdasarkan:</h5>
+        <div class="d-flex overflow-auto">
+            <button class="btn btn-outline-primary btn-sm me-2">Terbaru</button>
+            <button class="btn btn-outline-primary btn-sm me-2">Harga Terendah</button>
+            <button class="btn btn-primary btn-sm me-2">Harga Tertinggi</button>
+        </div>
+    </div>
+
+    <!-- Car List -->
+    <div class="container">
+        <!-- Available Car -->
+        <div class="car-card">
+            <div class="car-image">
+                <i class="bi bi-car-front"></i>
+            </div>
+            <div class="fw-bold">Toyota Brio</div>
+            <div class="text-muted">Rp 500.000/hari</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="status-available">Tersedia</div>
+                <div>
+                    <button class="btn btn-outline-primary btn-sm me-1">
+                        <i class="bi bi-pencil"></i> Edit
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="bi bi-eye"></i> Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rented Car -->
+        <div class="car-card">
+            <div class="car-image">
+                <i class="bi bi-car-front"></i>
+            </div>
+            <div class="fw-bold">Honda BRV</div>
+            <div class="text-muted">Rp 650.000/hari</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="status-rented">Disewa</div>
+                <div>
+                    <button class="btn btn-outline-primary btn-sm me-1">
+                        <i class="bi bi-pencil"></i> Edit
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="bi bi-eye"></i> Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maintenance Car -->
+        <div class="car-card">
+            <div class="car-image">
+                <i class="bi bi-car-front"></i>
+            </div>
+            <div class="fw-bold">Toyota Camry</div>
+            <div class="text-muted">Rp 800.000/hari</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="status-maintenance">Maintenance</div>
+                <div>
+                    <button class="btn btn-outline-primary btn-sm me-1">
+                        <i class="bi bi-pencil"></i> Edit
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="bi bi-eye"></i> Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add New Car Button -->
+    <div class="container mt-3">
+        <button class="btn btn-primary w-100 py-3">
+            <i class="bi bi-plus-circle"></i> Tambah Mobil Baru
+        </button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col nav-item">
+                    <i class="bi bi-bar-chart-line"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-car-front text-primary"></i>
+                    <span class="text-primary">Mobil</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-calendar"></i>
+                    <span>Kalender</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

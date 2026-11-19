@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme for Android 12+ (API 31+) -->
+    <style name="Theme.CibuburRentalCar" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Completely disable system splash screen -->
+        <item name="android:windowSplashScreenBackground">@color/deep_blue</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="android:windowSplashScreenAnimationDuration">1</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/deep_blue</item>
+        <item name="android:windowSplashScreenBrandingImage">@android:color/transparent</item>
+        
+        <!-- Make everything Deep Blue to match custom splash -->
+        <item name="android:statusBarColor">@color/deep_blue</item>
+        <item name="android:navigationBarColor">@color/deep_blue</item>
+        <item name="android:windowBackground">@color/deep_blue</item>
+        
+        <!-- Disable window animations that might cause flicker -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+</resources>

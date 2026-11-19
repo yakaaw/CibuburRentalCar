@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cibubur Rental Car</string>
+    <string name="search_hint">Cari mobil impian Anda...</string>
+    <string name="available_cars">Mobil Tersedia</string>
+    <string name="rent_now">Sewa Sekarang</string>
+    <string name="not_available">Tidak Tersedia</string>
+    <string name="per_day">/hari</string>
+    <string name="specifications">Spesifikasi</string>
+    <string name="features">Fitur</string>
+    <string name="booking_car">Booking Mobil</string>
+    <string name="rental_date">Tanggal Sewa</string>
+    <string name="start_date">Tanggal Mulai</string>
+    <string name="end_date">Tanggal Selesai</string>
+    <string name="pickup_location">Lokasi Pickup</string>
+    <string name="dropoff_location">Lokasi Drop-off</string>
+    <string name="notes_optional">Catatan (Opsional)</string>
+    <string name="add_notes">Tambahkan catatan...</string>
+    <string name="cost_summary">Ringkasan Biaya</string>
+    <string name="price_per_day">Harga per hari</string>
+    <string name="duration">Durasi</string>
+    <string name="total">Total</string>
+    <string name="confirm_booking">Konfirmasi Booking</string>
+    <string name="days">hari</string>
+    <string name="category">Kategori</string>
+    <string name="all">Semua</string>
+    <string name="location">Lokasi</string>
+    <string name="rating">Rating</string>
+    <string name="reviews">ulasan</string>
+    <string name="rental_price">Harga Sewa</string>
+</resources>

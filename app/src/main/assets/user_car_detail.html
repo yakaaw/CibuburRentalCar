@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Mobil - Cibubur Rental Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 70px;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+            display: block;
+        }
+        .carousel-image {
+            height: 250px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-image i {
+            font-size: 5rem;
+            color: #6c757d;
+        }
+        .spec-list, .facility-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .spec-list li, .facility-list li {
+            padding: 5px 0;
+        }
+        .spec-list li:before, .facility-list li:before {
+            content: "• ";
+            color: #0d6efd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-light">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <div>Detail Mobil</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Image Carousel -->
+    <div class="container mt-3">
+        <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Information -->
+    <div class="container mt-3">
+        <h4>Toyota Brio</h4>
+        <div class="text-warning">
+            <i class="bi bi-star-fill"></i> 4.8 (250 reviews)
+        </div>
+        <div class="mt-2">
+            <h5>Rp 500.000/hari</h5>
+            <div class="text-muted">Rp 450.000/hari (untuk 7 hari atau lebih)</div>
+        </div>
+    </div>
+
+    <!-- Specifications -->
+    <div class="container mt-3">
+        <h5>Spesifikasi:</h5>
+        <ul class="spec-list">
+            <li>Tipe: Hatchback</li>
+            <li>Transmisi: Manual</li>
+            <li>Bahan Bakar: Bensin</li>
+            <li>Kapasitas: 5 penumpang</li>
+            <li>Tahun: 2022</li>
+        </ul>
+    </div>
+
+    <!-- Description -->
+    <div class="container mt-3">
+        <h5>Deskripsi:</h5>
+        <p>Toyota Brio adalah mobil hatchback yang hemat bahan bakar dan nyaman untuk perjalanan kota. Dilengkapi dengan AC, audio system, dan airbag.</p>
+    </div>
+
+    <!-- Facilities -->
+    <div class="container mt-3">
+        <h5>Fasilitas:</h5>
+        <ul class="facility-list">
+            <li>AC</li>
+            <li>Audio System</li>
+            <li>Airbag</li>
+            <li>Power Windows</li>
+        </ul>
+    </div>
+
+    <!-- Action Button -->
+    <div class="container mt-3">
+        <button class="btn btn-primary w-100 py-3">
+            <i class="bi bi-calendar-check"></i> Sewa Sekarang
+        </button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col nav-item">
+                    <i class="bi bi-house-door"></i>
+                    <span>Beranda</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-calendar"></i>
+                    <span>Kalender</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-clipboard"></i>
+                    <span>Riwayat</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-person"></i>
+                    <span>Profil</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

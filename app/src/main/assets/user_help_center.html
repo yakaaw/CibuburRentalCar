@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan - Cibubur Rental Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 70px;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+            display: block;
+        }
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            text-align: center;
+        }
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .faq-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+        }
+        .contact-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-light">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <div>Pusat Bantuan</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="container mt-3">
+        <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Cari bantuan...">
+        </div>
+    </div>
+
+    <!-- Help Categories -->
+    <div class="container mt-3">
+        <h5>Kategori Bantuan:</h5>
+        <div class="row">
+            <div class="col-6">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <div>Cara Sewa</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div>Pembayaran</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                    <div>Mobil</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-clipboard"></i>
+                    </div>
+                    <div>Booking</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container mt-3">
+        <h5>Pertanyaan Umum:</h5>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="bi bi-chevron-down"></i> Bagaimana cara memesan mobil?
+            </div>
+            <div class="faq-answer">
+                Untuk memesan mobil, Anda dapat memilih mobil yang tersedia di halaman beranda, memilih tanggal sewa, dan mengisi formulir booking. Setelah itu, Anda akan menerima konfirmasi booking melalui email atau SMS.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="bi bi-chevron-down"></i> Apa saja syarat penyewaan mobil?
+            </div>
+            <div class="faq-answer">
+                Syarat penyewaan mobil adalah memiliki SIM yang masih berlaku, KTP asli, dan melakukan pembayaran deposit sesuai ketentuan. Untuk penyewa di bawah 25 tahun, diperlukan surat kuasa dari orang tua.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="bi bi-chevron-down"></i> Bagaimana proses pembayaran?
+            </div>
+            <div class="faq-answer">
+                Pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau langsung saat pengambilan mobil. Bukti pembayaran harus disimpan dan dibawa saat pengambilan mobil.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="bi bi-chevron-down"></i> Apakah tersedia layanan driver?
+            </div>
+            <div class="faq-answer">
+                Ya, layanan driver tersedia dengan biaya tambahan Rp 150.000/hari. Driver kami berpengalaman dan akan membantu Anda selama perjalanan.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <i class="bi bi-chevron-down"></i> Bagaimana jika terjadi kerusakan?
+            </div>
+            <div class="faq-answer">
+                Jika terjadi kerusakan, segera hubungi customer service kami. Kerusakan akan dinilai dan biaya perbaikan akan dibebankan sesuai ketentuan. Pastikan untuk memeriksa kondisi mobil saat pengambilan dan pengembalian.
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="container contact-card">
+        <h5>Hubungi Kami</h5>
+        <div class="d-flex align-items-center mt-3">
+            <div class="me-3">
+                <i class="bi bi-telephone" style="font-size: 1.5rem; color: #0d6efd;"></i>
+            </div>
+            <div>
+                <div>+62 21 1234 5678</div>
+                <div class="text-muted small">Senin - Jumat, 08:00 - 17:00 WIB</div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center mt-3">
+            <div class="me-3">
+                <i class="bi bi-envelope" style="font-size: 1.5rem; color: #0d6efd;"></i>
+            </div>
+            <div>
+                <div>support@cibuburrentalcar.com</div>
+                <div class="text-muted small">Respon dalam 24 jam kerja</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col nav-item">
+                    <i class="bi bi-house-door"></i>
+                    <span>Beranda</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-calendar"></i>
+                    <span>Kalender</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-clipboard"></i>
+                    <span>Riwayat</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-person text-primary"></i>
+                    <span class="text-primary">Profil</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle FAQ answers
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.remove('bi-chevron-up');
+                    icon.classList.add('bi-chevron-down');
+                } else {
+                    answer.style.display = 'block';
+                    icon.classList.remove('bi-chevron-down');
+                    icon.classList.add('bi-chevron-up');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

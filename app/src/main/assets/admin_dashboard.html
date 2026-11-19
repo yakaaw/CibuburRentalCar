@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Cibubur Rental Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 70px;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+            display: block;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            text-align: center;
+        }
+        .stat-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .booking-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <i class="bi bi-bar-chart-line"></i>
+                    <span class="ms-2">Dashboard Admin</span>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics -->
+    <div class="container mt-3">
+        <h5>Statistik Hari Ini:</h5>
+        <div class="row">
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-icon text-success">
+                        <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div>Pendapatan</div>
+                    <div class="fw-bold">Rp 5jt</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-icon text-primary">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                    <div>Mobil</div>
+                    <div class="fw-bold">12</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="stat-card">
+                    <div class="stat-icon text-info">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div>Pengguna</div>
+                    <div class="fw-bold">45</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Bookings -->
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5>Booking Terbaru:</h5>
+            <a href="#" class="text-decoration-none">Lihat Semua</a>
+        </div>
+        
+        <div class="booking-card">
+            <div class="fw-bold">Booking ID: #BR20250825001</div>
+            <div class="text-muted small">User: Budi Santoso</div>
+            <div class="text-muted small">Mobil: Toyota Brio</div>
+            <div class="text-muted small">Tanggal: 25-27 Agustus 2025</div>
+            <div class="text-success small">Status: Aktif</div>
+        </div>
+        
+        <div class="booking-card">
+            <div class="fw-bold">Booking ID: #BR20250824001</div>
+            <div class="text-muted small">User: Ani Wijaya</div>
+            <div class="text-muted small">Mobil: Honda BRV</div>
+            <div class="text-muted small">Tanggal: 24-26 Agustus 2025</div>
+            <div class="text-success small">Status: Aktif</div>
+        </div>
+    </div>
+
+    <!-- Cars Needing Attention -->
+    <div class="container mt-3">
+        <h5>Mobil Perlu Perhatian:</h5>
+        
+        <div class="car-card">
+            <div class="fw-bold">Toyota Camry</div>
+            <div class="text-warning small">Status: Perlu Servis</div>
+            <div class="text-muted small">Tanggal Servis: 30 Agustus 2025</div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="container mt-3">
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary py-3">
+                <i class="bi bi-bar-chart"></i> Lihat Semua Statistik
+            </button>
+            <button class="btn btn-primary py-3">
+                <i class="bi bi-car-front"></i> Kelola Mobil
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col nav-item">
+                    <i class="bi bi-bar-chart-line text-primary"></i>
+                    <span class="text-primary">Dashboard</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-car-front"></i>
+                    <span>Mobil</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-calendar"></i>
+                    <span>Kalender</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

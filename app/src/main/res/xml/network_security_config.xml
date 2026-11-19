@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for development/local servers -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Emulator localhost -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        
+        <!-- Common local network ranges -->
+        <domain includeSubdomains="true">192.168.1.1</domain>
+        <domain includeSubdomains="true">192.168.0.1</domain>
+        <domain includeSubdomains="true">192.168.1.100</domain>
+        <domain includeSubdomains="true">192.168.2.32</domain>
+        <domain includeSubdomains="true">192.168.100.130</domain>
+        <domain includeSubdomains="true">192.168.1.37</domain>
+        <domain includeSubdomains="true">192.168.156.219</domain>
+        
+        <!-- Additional local IP ranges for development -->
+        <domain includeSubdomains="true">192.168.1.0</domain>
+        <domain includeSubdomains="true">192.168.2.0</domain>
+        <domain includeSubdomains="true">192.168.0.0</domain>
+        <domain includeSubdomains="true">192.168.156.0</domain>
+        <domain includeSubdomains="true">10.0.0.0</domain>
+        <domain includeSubdomains="true">172.16.0.0</domain>
+
+        <!-- Common WiFi/Hotspot IP ranges -->
+        <domain includeSubdomains="true">192.168.43.0</domain>
+        <domain includeSubdomains="true">192.168.100.0</domain>
+        <domain includeSubdomains="true">192.168.200.0</domain>
+        <domain includeSubdomains="true">192.168.254.0</domain>
+    </domain-config>
+    
+    <!-- For production, remove cleartext and use HTTPS only -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>

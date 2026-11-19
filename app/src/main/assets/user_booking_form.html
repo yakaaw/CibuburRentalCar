@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Mobil - Cibubur Rental Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 70px;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid #dee2e6;
+            padding: 10px 0;
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+            display: block;
+        }
+        .car-info {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .form-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .cost-summary {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-light">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <div>Booking Mobil</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Information -->
+    <div class="container car-info">
+        <div class="d-flex align-items-center">
+            <div class="me-3">
+                <i class="bi bi-car-front" style="font-size: 2rem;"></i>
+            </div>
+            <div>
+                <div class="fw-bold">Toyota Brio</div>
+                <div class="text-muted">Rp 500.000/hari</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="container form-section">
+        <h5>Tanggal Sewa:</h5>
+        <div class="d-flex align-items-center mb-3">
+            <div class="input-group me-2">
+                <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                <input type="date" class="form-control" value="2025-08-25">
+            </div>
+            <div class="mx-2">→</div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                <input type="date" class="form-control" value="2025-08-27">
+            </div>
+        </div>
+        <div class="text-muted mb-3">(3 hari)</div>
+
+        <h5>Waktu Pengambilan:</h5>
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-clock"></i></span>
+            <input type="time" class="form-control" value="09:00">
+        </div>
+
+        <h5>Lokasi Pengambilan:</h5>
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+            <input type="text" class="form-control" value="Cibubur">
+        </div>
+
+        <h5>Waktu Pengembalian:</h5>
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-clock"></i></span>
+            <input type="time" class="form-control" value="17:00">
+        </div>
+
+        <h5>Lokasi Pengembalian:</h5>
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+            <input type="text" class="form-control" value="Cibubur">
+        </div>
+
+        <h5>Driver:</h5>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="driver" id="withDriver" value="with">
+                <label class="form-check-label" for="withDriver">
+                    Dengan Driver (+ Rp 150.000/hari)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="driver" id="withoutDriver" value="without" checked>
+                <label class="form-check-label" for="withoutDriver">
+                    Tanpa Driver
+                </label>
+            </div>
+        </div>
+
+        <h5>Informasi Tambahan:</h5>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Tulis catatan tambahan untuk penyewa..." id="additionalInfo" style="height: 100px"></textarea>
+            <label for="additionalInfo">Tulis catatan tambahan untuk penyewa...</label>
+        </div>
+    </div>
+
+    <!-- Cost Summary -->
+    <div class="container cost-summary">
+        <h5>Ringkasan Biaya:</h5>
+        <div class="d-flex justify-content-between">
+            <div>Biaya Sewa:</div>
+            <div>Rp 1.500.000</div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>Biaya Driver:</div>
+            <div>Rp 0</div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold">
+            <div>Total:</div>
+            <div>Rp 1.500.000</div>
+        </div>
+    </div>
+
+    <!-- Action Button -->
+    <div class="container">
+        <button class="btn btn-primary w-100 py-3">
+            <i class="bi bi-check-circle"></i> Konfirmasi Booking
+        </button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col nav-item">
+                    <i class="bi bi-house-door"></i>
+                    <span>Beranda</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-calendar"></i>
+                    <span>Kalender</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-clipboard"></i>
+                    <span>Riwayat</span>
+                </div>
+                <div class="col nav-item">
+                    <i class="bi bi-person"></i>
+                    <span>Profil</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
